@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0,0,25,0.9), rgba(0,0,25,0.9)), url(images/447-photo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+}
+.hero h1{
+    font-size: 120px;
+    font-weight: 600;
+    position: relative;
+    z-index: 2;
+}
+#focus{
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    z-index: 1;
+    background: url(images/447-photo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border-radius: 50%;
+    top: calc(50% - 140px);
+    left: calc(50% - 140px);
+}
+                                            /*             media screen                 */
+@media (max-width: 600px){
+    .hero{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(rgba(0,0,25,0.9), rgba(0,0,25,0.9)), url(images/blake-verdoorn-cssvEZacHvQ-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+    }
+    #focus{
+        position: absolute;
+        width: 280px;
+        height: 280px;
+        z-index: 1;
+        background: url(images/blake-verdoorn-cssvEZacHvQ-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        border-radius: 50%;
+        top: calc(50% - 140px);
+        left: calc(50% - 140px);
+    }
+    .hero h1{
+        font-size: 70px;
+        font-weight: 600;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+@media(max-width: 300px){
+    .hero h1{
+        font-size: 50px;
+    }
+}
